@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+llama-cpp-python
+# git+https://github.com/abdeladim-s/pyllamacpp.git

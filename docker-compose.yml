@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+    backend:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: llama-ccp:latest
+        container_name: llama-cpp
+        volumes:
+            - ./:/workspace
+        environment:
+            - PYTHONUNBUFFERED=1
+        ports:
+            - 5000:5000
